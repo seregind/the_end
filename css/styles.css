@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@keyframes theend {
+	from {
+		width: 150px;
+		height: 150px;
+	}
+	to {
+		width: 1600px;
+		height: 1600px;
+		background-color: chocolate;
+	}
+}
+.circle {
+	border-radius: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	animation-name: theend;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+}
+@keyframes p {
+	from {
+		color: transparent;
+	}
+	to {
+		color: #fff;
+	}
+}
+.p {
+	color: transparent;
+	font-family: sans-serif;
+	font-weight: 600;
+	width: 600px;
+	font-size: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: auto;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	animation-name: p;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+	animation-duration: 5s;
+}
