@@ -5,16 +5,16 @@
 }
 @keyframes theend {
 	from {
-		width: 150px;
-		height: 150px;
+		background-color: transparent;
 	}
 	to {
-		width: 1600px;
-		height: 1600px;
+		transform: scale(11);
 		background-color: chocolate;
 	}
 }
 .circle {
+	width: 150px;
+	height: 150px;
 	border-radius: 100%;
 	position: absolute;
 	top: 0;
@@ -25,6 +25,7 @@
 	animation-name: theend;
 	animation-duration: 4s;
 	animation-fill-mode: forwards;
+	overflow: hidden;
 }
 @keyframes p {
 	from {
